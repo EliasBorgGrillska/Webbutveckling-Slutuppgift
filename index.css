@@ -53,15 +53,15 @@ font-weight: 1000;
     .picturecontainer
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; /*Sätter containern horisontellt*/
     }
 }
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 500px) /*Gäller bara när skärmen är under */
 {
     .container
     {
-        display: flex;
+        display: flex; /*Gör att .container använder flexbox*/
         justify-content: center;
     }
     .button1
@@ -75,20 +75,20 @@ font-weight: 1000;
         margin-right: auto;
         width: 450px;
         height: 500px;
-        object-fit: cover;
+        object-fit: cover; /*Gör att bilden blir klippt istället för att bli formad, vilket gör att den ser bättre ut*/
         object-position: 25% 25%;
         padding-top: 30px;
     }
     .picture234 img
     {
         display: block;
-        margin-left: auto;
+        margin-left: auto; /*margin auto gör att bilden blir centrerad*/
         margin-right: auto;
         width: 450px;
         height: 250 px;
         object-fit: cover;
         object-position: 25% 25%;
-        padding-top: 30px;
+        padding-top: 30px; /*Lägger ett 30px stort mellanrum över bilder.*/
     }
     
 
